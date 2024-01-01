@@ -1,0 +1,331 @@
+:root,
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin: 10px auto;
+}
+.attribution a {
+  color: hsl(228, 32%, 52%);
+}
+
+.logo-header {
+  width: 50px;
+}
+
+body {
+  background-color: rgb(54, 50, 50);
+}
+
+.main-container {
+  background-color: white;
+  width: 1440px;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  font-size: 18px;
+  font-family: Bai Jamjuree;
+}
+
+.header {
+  background-image: url("./images/bg-header-desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0px;
+}
+
+p {
+  line-height: 25px;
+}
+
+.header p {
+  text-align: center;
+  width: 600px;
+}
+
+h1,
+h2 {
+  font-weight: 400;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+h3 {
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+p {
+  font-weight: 400;
+  color: grey;
+  width: 700px;
+  margin: 20px 0px;
+  font-size: 14px;
+}
+
+.header-btn a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 12px;
+  margin: 0px 10px;
+}
+
+.header-btn :nth-child(1) {
+  background-color: hsl(171, 66%, 44%);
+  cursor: pointer;
+}
+
+.header-btn :nth-child(1):hover {
+  box-shadow: 0px 1px 4px hsl(210, 10%, 33%);
+  opacity: 3;
+}
+
+.header-btn :nth-child(2):hover {
+  box-shadow: 0px 1px 4px hsl(201, 11%, 66%);
+  opacity: 3;
+}
+
+.header-btn :nth-child(2) {
+  background-color: hsl(233, 100%, 69%);
+}
+
+.section-two,
+.section-four {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.section-two p,
+.section-four p {
+  text-align: center;
+  width: 550px;
+  margin-bottom: 50px;
+}
+
+.section-three {
+  display: flex;
+  gap: 120px;
+}
+
+.section-three-image,
+.section-four-image {
+  width: 600px;
+}
+
+.section-three-description {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.section-three-description h3 {
+  margin-bottom: 10px;
+}
+
+.section-three-description h3,
+p {
+  font-weight: 400;
+  text-align: left;
+}
+
+.section-three-description p {
+  width: 300px;
+  margin: 0px;
+}
+
+.section-five {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-five p {
+  text-align: center;
+}
+
+.section-five-tools {
+  display: flex;
+  gap: 20px;
+}
+
+.tool {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 60px 0px;
+}
+
+.tool img {
+  width: 30px;
+}
+
+.tool p {
+  width: 300px;
+  text-align: center;
+}
+
+.section-six-logo img {
+  width: 100px;
+}
+
+.section-six-logo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.section-seven {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0px;
+}
+
+.section-seven p {
+  text-align: center;
+  width: 600px;
+  margin-bottom: 40px;
+}
+
+.footer-logo img {
+  width: 30px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(222, 221, 221);
+  margin-top: 40px;
+  padding: 40px 0px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: center;
+  margin-left: 50px;
+}
+
+.contact p {
+  width: 200px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.contact-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-details p:hover,
+.contact-social a:hover {
+  color: hsl(171, 66%, 44%);
+  cursor: pointer;
+}
+
+.contact-social a {
+  color: grey;
+  padding: 0px 5px;
+}
+
+@media (max-width: 400px) {
+  .main-container {
+    max-width: 375px;
+  }
+  .header {
+    padding: 50px 10px;
+  }
+  .header p,
+  .section-two p {
+    width: 335px;
+  }
+  .header-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+    text-align: center;
+  }
+  .section-two {
+    padding: 0px 20px;
+  }
+  .section-three {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .section-three-image,
+  .section-four-image {
+    width: 300px;
+  }
+  .section-three-description h3,
+  p {
+    text-align: center;
+  }
+  .section-four {
+    padding: 40px;
+  }
+  .access-clipboard-header,
+  .access-clipboard-header p {
+    width: 300px;
+  }
+  .section-five h2, p, .section-seven h2{
+    width: 300px;
+  }
+  .section-five-tools{
+    flex-direction: column;
+    gap: 5px;
+  }
+  .section-six-logo{
+    flex-direction: column;
+    gap: 45px;
+  }
+  .section-seven p{
+    width: 300px;
+  }
+  .footer{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .contact{
+   flex-direction: column;
+   align-items: center;
+   margin-left: 0;
+  }
+  .contact-details p{
+    align-items: center;
+  }
+}
